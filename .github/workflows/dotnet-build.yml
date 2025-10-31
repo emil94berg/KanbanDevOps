@@ -1,4 +1,4 @@
-name:  Manual .NET Build
+tname:  Manual .NET Build
 
 on:
   workflow_dispatch:
@@ -48,10 +48,13 @@ jobs:
         working-directory: FirstRiderWebApp/FirstRiderWebApp
         run: | 
           dotnet build
+        
+          
       
       - name: Run code
         if: success()
         run: dotnet run --project FirstRiderWebApp/FirstRiderWebApp/FirstRiderWebApp.csproj
+        timeout-minutes: 1
         
       - name: Failed to build 
         if: failure()
