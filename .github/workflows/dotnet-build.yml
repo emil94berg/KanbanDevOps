@@ -48,7 +48,6 @@ jobs:
         working-directory: FirstRiderWebApp/FirstRiderWebApp
         run: | 
           dotnet build
-          exit 1
       
       - name: Run code
         if: success()
