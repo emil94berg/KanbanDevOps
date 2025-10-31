@@ -45,13 +45,14 @@ jobs:
           dotnet-version: '9-0-x'
 
       - name: Build project
+        working-directory: FirstRiderWebApp/FirstRiderWebApp.App
         run: | 
           dotnet build
           exit 1
       
       - name: Run code
         if: success()
-        run: dotnet run --project CleanCodeDevOps.App/CleanCodeDevOps.App.csproj
+        run: dotnet run --project FirstRiderWebApp/FirstRiderWebApp.App/FirstRiderWebApp.App.csproj
         
       - name: Failed to build 
         if: failure()
