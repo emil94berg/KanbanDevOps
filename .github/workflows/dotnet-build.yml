@@ -1,4 +1,4 @@
-tname:  Manual .NET Build
+name:  Manual .NET Build
 
 on:
   workflow_dispatch:
