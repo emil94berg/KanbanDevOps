@@ -420,5 +420,5 @@ FodyWeavers.xsd
 #Jetbrains
 .idea/
 
-appsettings.json
+appsettings.Development.json
 nul
