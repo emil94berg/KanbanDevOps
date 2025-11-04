@@ -7,10 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="wwwroot\lib\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <PackageReference Include="jQuery" Version="3.7.1" />
       <PackageReference Include="knockoutjs" Version="3.5.1" />
       <PackageReference Include="Supabase" Version="1.1.1" />
@@ -19,6 +15,12 @@
     <ItemGroup>
       <None Include="wwwroot\index.html" />
       <None Include="wwwroot\lib\Scripts\Test.js" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="wwwroot\lib\Model\Card.cs" />
+      <Compile Include="wwwroot\lib\Model\Column.cs" />
+      <Compile Include="wwwroot\lib\Model\Kanban.cs" />
     </ItemGroup>
 
 </Project>
