@@ -7,6 +7,10 @@ function TestViewModel(){
     this.fullname = ko.computed( () => {
         return viewModel.name() + ' ' + viewModel.lastName();
     });
+    this.displayAge = function(){
+        this.age(8);
+        console.log("hej");
+    }
 }
 
 ko.applyBindings(new TestViewModel());

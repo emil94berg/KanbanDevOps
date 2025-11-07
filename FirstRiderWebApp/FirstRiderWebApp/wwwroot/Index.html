@@ -7,10 +7,13 @@
 </head>
 <body>
 <p>Name <strong data-bind="text: name"></strong></p>
-<p>Name: <input data-bind="value: name" /></p>
+<label>Name: <input data-bind="value: name" /></label>
 <p>Name <strong data-bind="text: lastName"></strong></p>
-<p>Name: <input data-bind="value: lastName" /></p>
+<label>Name: <input data-bind="value: lastName" /></label>
 <p>FullName: <strong data-bind="text: fullname"></strong></p>
+<p>Age: <strong data-bind="text: age"></strong></p>
+
+<button data-bind="click: $root.displayAge">Click me</button>
 
 
 </body>
